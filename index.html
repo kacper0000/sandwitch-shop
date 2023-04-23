@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>sandwitch shop</title>
+  </head>
+  <body>
+        
+    <h1>lunch special</h1>
+
+    <strong>Meal Deal price: $9.95 (plus tax) </strong>
+    <p>Meal Deal Include sandwitch, snack and drink</p>
+
+    <p>Monday thru Friday, 11 am ~ 3pm</p>  
+
+
+    <form target="_blank" autocomplete="on">
+
+      <div class="ordertype">
+        <h3>Name and order type</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br><br>
+            
+        <input type="radio" id="option1" name="selection" value="option1">
+        <label for="option1">Take away</label><br>
+          <input type="radio" id="option2" name="selection" value="option2">
+          <label for="option2">Eat in</label><br>
+      </div>
+           
+        <!-- RADIO (select one) input fields -->
+      <div class="mainselection" id="mainselection">
+        <h1 >What main would you like to choose:</h1>
+        <div id="monday" class="mainoption">
+          <h2>Monday</h2>
+          <input type="radio" name="monday" value="monday" class="monday" disabled/>
+          <label for="monday"> Tomato Mozzarella</label><br />
+      
+          <input type="radio" name="monday" value="monday2" class="monday"  disabled/>
+          <label for="monday2">Chicken Salad</label><br />
+        </div>
+        <div id="tuesday" class="mainoption">
+          <h2>Tuesday</h2>
+          <input type="radio" name="tuesday" value="tuesday" class="tuesday" disabled/>
+          <label for="tuesday">Greek Salad Wrap</label><br />
+      
+          <input type="radio" name="tuesday" value="tuesday2" class="tuesday"  disabled/>
+          <label for="tuesday2">Toto Wrap</label><br />
+        </div>
+        <div id="wednesday" class="mainoption">
+          <h2>Wensday</h2>
+          <input type="radio" name="wednesday" value="wednesday" class="wednesday" disabled/>
+          <label for="wednesday">Red Pepper Hummus</label><br />
+      
+          <input type="radio" name="wednesday" value="wednesday2" class="wednesday"  disabled/>
+          <label for="wednesday2">Roasted Turkey</label><br />
+        </div>
+        <div id="thursday" class="mainoption">
+          <h2>Thursday</h2>
+          <input type="radio" name="thursday" value="thursday" class="thursday" disabled/>
+          <label for="thursday"> Carrot-Ginger Hummus Wrap</label><br />
+      
+          <input type="radio" name="thursday" value="thursday2" class="thursday"  disabled/>
+          <label for="thursday2"> Egg Salad</label><br />
+        </div>
+        <div id="Friday" class="mainoption">
+          <h2>Friday</h2>
+          <input type="radio" name="friday" value="friday" class="friday" disabled/>
+          <label for="friday"> Dado Wrap</label><br />
+      
+          <input type="radio" name="Friday" value="friday2" class="friday"  disabled/>
+          <label for="friday2"> Tuna Salad</label><br />
+        </div>
+
+        <input type="checkbox" id="allergy" name="allergy" value="allergy"  />
+        <label for="allergy"> Gluten Free Bread (0.75$ extra)</label><br />
+      </div>
+
+      <div class="snackselection">
+        <h2>Snacks</h2>
+        <input type="radio" name="snack" value="apple" class="snack" />
+        <label for="apple"> Apple</label><br />
+      
+        <input type="radio" name="snack" value="banana" class="snack"  />
+        <label for="banana"> Banana</label><br />
+
+        <input type="radio" name="snack" value="potato" class="snack"  />
+        <label for="potato"> Potato Chips</label><br />
+      </div>
+      
+        
+      <!-- SELECT (dropdown choice) input fields -->
+      <div class="drinkselection">
+        <label for="drink">What drink would you like?:</label>
+        <select id="drink" name="drink">
+          <option value="0">Peppermint</option>
+          <option value="1">Tea</option>
+          <option value="2">Coffee</option>
+          <option value="3">Water</option>
+          <option value="4">Bubble tea (1.5$ extra)</option>
+        </select>
+        
+        <input type="radio" name="temp" value="hot" class="temp" />
+        <label for="hot"> Hot</label><br />
+      
+        <input type="radio" name="temp" value="iced" class="temp"  />
+        <label for="iced"> Iced </label><br />
+        
+
+        <input type="checkbox" id="large" name="large" value="large"  />
+        <label for="large"> Make it large (0.75$ extra)</label><br />
+
+      </div>
+      
+        <!-- File picker input field -->
+        <!-- <input type="file" />-->
+      
+        <!-- Form control buttons -->
+      <div>
+        <button class="resetBtn" type="reset">RESET</button>
+        <button type="submit" target="">Submit</button>
+      </div>
+    </form>   
+    
+    <script src="app.js"></script>
+  </body>
+</html>

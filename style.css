@@ -1,0 +1,17 @@
+*{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainselection, .snackselection, .drinkselection, .ordertype{
+    border: 2px solid  black;
+    width: 400px;
+    margin: 15px;
+}
+.gluten{
+    border: 2px solid  black;
+}
+.gluten{
+    margin: 20px;
+}
